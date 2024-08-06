@@ -1,0 +1,31 @@
+Yara's House
+===
+Rooms:
+Entry
+This is a narrow entry way to a seemingly large house.
+---
+Living Room
+The living room is decorated with all kinds of cats. May it be small or large, all cat memorabilia seems to have its place here. There is a wide arched doorway east to you.
+---
+Kitchen
+A small but cozy kitchen, with big amounts of machines, such as an ice cream, mixer and washing machine.
+---
+===
+Exits:
+Entry
+north
+Living Room
+---
+Living Room
+south
+Entry
+---
+Living Room
+east
+Kitchen
+---
+Kitchen
+west
+Living Room
+---
+===
