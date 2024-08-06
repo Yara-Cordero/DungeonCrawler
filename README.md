@@ -1,7 +1,8 @@
 ## Dungeon Crawler
 
 This game is like no other, you are able to create your own game with this code. 
-The Docs are found here. 
+
+<br>
 
 =========================================================================
 
