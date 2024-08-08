@@ -40,7 +40,7 @@ class Interpreter {
 
     private static String showFileChooser(){
         JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setCurrentDirectory(new File("C:\\Projects\\BLJ2023YaCor\\Java\\2024\\KW27\\Zork-Implementatio_1.1\\src\\files"));
+        fileChooser.setCurrentDirectory(new File("C:\\Projects\\DungeonCrawler\\src\\files"));
         fileChooser.setDialogTitle("Select Zork Game File");
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 

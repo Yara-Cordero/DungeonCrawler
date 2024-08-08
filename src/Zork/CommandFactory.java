@@ -28,6 +28,8 @@ class CommandFactory {
             return new InventoryCommand();
         } else if (commandString.equals("take")) {
             return new TakeCommand(commandString);
+        } else if(commandString.equals("exit") || commandString.equals("help")) {
+            return new AssistCommands(commandString);
         }
 
         String[] splitCommand = commandString.split(regex);
@@ -35,7 +37,7 @@ class CommandFactory {
         if (ArrayUtils.contains(splitCommand, "move")) {
             return new MovementCommand(splitCommand[1]);
         } else if (ArrayUtils.contains(splitCommand, "look")) {
-            return new LookCommand();
+            return new LookCommand(splitCommand[1]);
         } else if (ArrayUtils.contains(splitCommand, "take")) {
             return new TakeCommand(splitCommand[1]);
         } else if (ArrayUtils.contains(splitCommand, "use")) {

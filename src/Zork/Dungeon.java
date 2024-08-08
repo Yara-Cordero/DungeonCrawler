@@ -11,15 +11,15 @@ import java.util.Scanner;
 public class Dungeon {
 
     private Room entry;
-    private String title;
+    private String dungeonName;
     private Hashtable<String, Room> rooms;
     private Hashtable<String, Item> items;
     private List<ExitInfo> exits;
     private String filepath;
 
-    public Dungeon(Room entry, String title) {
+    public Dungeon(Room entry, String dungeonName) {
         this.entry = entry;
-        this.title = title;
+        this.dungeonName = dungeonName;
         rooms = new Hashtable<>();
         items = new Hashtable<>();
     }
@@ -30,7 +30,7 @@ public class Dungeon {
         items = new Hashtable<>();
         exits = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(filepath))) {
-            this.title = reader.readLine();
+            this.dungeonName = reader.readLine();
             String line = reader.readLine();
 
             if (!line.equals("===")) {
@@ -132,7 +132,7 @@ public class Dungeon {
     }
 
     public String getTitle() {
-        return title;
+        return dungeonName;
     }
 
     public void addRoom (Room room){

@@ -50,6 +50,10 @@ public class Item {
         return primaryName;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     public String getMessageForVerb(String verb){
         return messages.get(verb);
     }
